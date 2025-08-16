@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=3.0">
+  <title>Vajra - Intelligent Chat Assistant</title>
+  <link rel="stylesheet" href="styles/home.css">
+  <!-- Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="assets/logos.png">
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="logo">
+        <div class="logo-icon"><img src="assets/logos.png" style="width: 40px;"/></div>
+        <div>
+          <h3 style="color: rgb(176, 41, 65); -webkit-text-stroke: 00.1px rgb(255, 255, 255);">Vajra</h3>
+          <p>Intelligent Chat Assistant</p>
+        </div>
+      </div>
+      <button id="toggleTheme" class="mode-btn"><i style="color: yellow;"class="fas fa-smile"></i> Light Mode</button>
+
+    </header>
+
+    <main class="app-main">
+      <!-- Chat Section -->
+      <section class="chat-section">
+        <div class="chat-header">
+          <h3>Chat with Vajra</h3>
+           <div class="chat-modes">
+    <button class="mode-btn active" onclick="setMode('ai')">🧠 AI Mode</button>
+    <button class="mode-btn " onclick="setMode('code')">🧠 Coding</button>
+    <button class="mode-btn" onclick="setMode('search')">🌐 Search Mode</button>
+  </div>
+
+          <span class="status">● Online</span>
+        </div>
+        <div class="chat-display" id="chatDisplay">
+
+        </div>
+        <div class="chat-input">
+          <input id="userInput" type="text" placeholder="Ask me anything...">
+          <button class="sendMessage"onclick="sendMessage()">➤</button>
+        </div>
+      </section>
+
+      <!-- Capabilities Section -->
+      <aside class="capabilities">
+        <h3>Capabilities</h3>
+        <div class="card">
+          <h4>🔍 Smart Web Searches</h4>
+          <p>Find exactly what you need with intelligent search capabilities and real-time results.</p>
+        </div>
+        <div class="card">
+          <h4>📚 Learning & Knowledge Support</h4>
+          <p>Perfect for students, educators, and curious minds seeking comprehensive explanations.</p>
+        </div>
+        <div class="card">
+          <h4>🧠 Contextual Understanding</h4>
+          <p>Remembers conversation history and provides personalized, context-aware assistance.</p>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="scripts/home.js"></script>
+</body>
+</html>
