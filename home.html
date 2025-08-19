@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=3.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vajra - Intelligent Chat Assistant</title>
   <link rel="stylesheet" href="styles/home.css">
   <!-- Font Awesome CDN for icons -->
@@ -10,46 +10,6 @@
   <link rel="icon" href="assets/logos.png">
 </head>
 <body>
-  <div id="preloader" style="
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, #000000, #1a1a1a, #4400ff);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  z-index: 9999;
-">
-
-  <!-- Pulsing Logo -->
-  <img src="assets/logos.png" alt="Vajra Logo" style="
-    width: 180px;
-    margin-bottom: 20px;
-    animation: spin 1.5s linear infinite;
-  ">
-
-  <!-- Loading Bar -->
-  <div style="
-    width: 500px;
-    height: 6px;
-    background: rgba(255,255,255,0.2);
-    border-radius: 3px;
-    overflow: hidden;
-  ">
-    <div style="
-      width: 0%;
-      height: 100%;
-      background: linear-gradient(90deg, #ff0044, #ffdd00);
-      animation: load 2s forwards;
-    "></div>
-  </div>
-
-
-</div>
 
 <style>
 
@@ -64,7 +24,7 @@
 </style>
 
 
-  <div class="app"  id="app-content" style="display:none;">
+  <div class="app"  id="app-content">
     <header class="app-header">
       <div class="logo">
         <div class="logo-icon"><img src="assets/logos.png" style="width: 40px;"/></div>
@@ -119,6 +79,5 @@
   </div>
 
   <script src="scripts/home.js"></script>
-    <script src="scripts/preloader.js"></script>
 </body>
 </html>

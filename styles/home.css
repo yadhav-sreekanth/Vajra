@@ -442,3 +442,26 @@ body.light-mode .mode-btn.active {
 
 
 
+@media (max-width: 984px) {
+  .status{
+    display: none;
+  }
+  .chat-section h3{
+    display: none;
+  }
+  .chat-header{
+ justify-content: center;
+ align-items: center;
+ display: flex;
+  }
+}
+@media (max-width: 421px) {
+#toggleTheme{
+  display: none;
+}
+}
+@media (max-width: 342px) {
+.app-header p{
+  display: none;
+}
+}
